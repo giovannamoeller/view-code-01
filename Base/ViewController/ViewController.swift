@@ -21,12 +21,7 @@ class ViewController: UIViewController {
     
     let bottomStackView = BottomStackView()
     
-    let mainView = UIView()
-    mainView.backgroundColor = .systemIndigo
-    
-    let textView = MainTextView()
-    mainView.addSubview(textView)
-    textView.configureConstraints()
+    let mainView = MainView()
     
     let stackView = UIStackView(arrangedSubviews: [topStackView, mainView, bottomStackView])
     view.addSubview(stackView)

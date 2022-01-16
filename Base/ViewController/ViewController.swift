@@ -21,19 +21,30 @@ class ViewController: UIViewController {
     greenView.backgroundColor = .systemGreen
     let pinkView = UIView()
     pinkView.backgroundColor = .systemPink
-    let purpleView = UIView()
-    purpleView.backgroundColor = .systemIndigo
-    
-    let topStackView = UIStackView(arrangedSubviews: [greenView, pinkView, purpleView])
-    topStackView.distribution = .fillEqually
-    
-    let magentaView = UIView()
-    magentaView.backgroundColor = .magenta
+    let cyanView = UIView()
+    cyanView.backgroundColor = .systemCyan
     
     let orangeView = UIView()
-    orangeView.backgroundColor = .orange
+    orangeView.backgroundColor = .systemGreen
+    let yellowView = UIView()
+    yellowView.backgroundColor = .systemYellow
+    let tealView = UIView()
+    tealView.backgroundColor = .systemTeal
+    let purpleView = UIView()
+    purpleView.backgroundColor = .systemPurple
+    let brownView = UIView()
+    brownView.backgroundColor = .systemBrown
     
-    let stackView = UIStackView(arrangedSubviews: [topStackView, magentaView, orangeView])
+    let topStackView = UIStackView(arrangedSubviews: [greenView, pinkView, cyanView])
+    topStackView.distribution = .fillEqually
+    
+    let bottomStackView = UIStackView(arrangedSubviews: [orangeView, yellowView, tealView, purpleView, brownView])
+    bottomStackView.distribution = .fillEqually
+    
+    let mainView = UIView()
+    mainView.backgroundColor = .systemIndigo
+    
+    let stackView = UIStackView(arrangedSubviews: [topStackView, mainView, bottomStackView])
     view.addSubview(stackView)
     stackView.axis = .vertical
     stackView.distribution = .fillEqually

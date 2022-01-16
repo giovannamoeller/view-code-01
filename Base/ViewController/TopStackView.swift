@@ -11,7 +11,6 @@ class TopStackView: UIStackView {
 
   override init(frame: CGRect) {
     super.init(frame: frame)
-    
     configureStackView()
   }
   
@@ -29,17 +28,4 @@ class TopStackView: UIStackView {
     self.distribution = .fillEqually
     self.heightAnchor.constraint(equalToConstant: 96).isActive = true
   }
-  
-  func createSubViews() -> [UIView] {
-    let greenView = UIView()
-    greenView.backgroundColor = .systemGreen
-    let pinkView = UIView()
-    pinkView.backgroundColor = .systemPink
-    let cyanView = UIView()
-    cyanView.backgroundColor = .systemCyan
-    
-    return [greenView, pinkView, cyanView]
-  }
-  
-
 }

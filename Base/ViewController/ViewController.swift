@@ -17,13 +17,6 @@ class ViewController: UIViewController {
 
   func configureUI() {
     
-    let greenView = UIView()
-    greenView.backgroundColor = .systemGreen
-    let pinkView = UIView()
-    pinkView.backgroundColor = .systemPink
-    let cyanView = UIView()
-    cyanView.backgroundColor = .systemCyan
-    
     let orangeView = UIView()
     orangeView.backgroundColor = .systemGreen
     let yellowView = UIView()
@@ -40,8 +33,7 @@ class ViewController: UIViewController {
     textView.textColor = .white
     textView.font = .systemFont(ofSize: 24.0, weight: .bold)
     
-    let topStackView = UIStackView(arrangedSubviews: [greenView, pinkView, cyanView])
-    topStackView.distribution = .fillEqually
+    let topStackView = TopStackView()
     
     let bottomStackView = UIStackView(arrangedSubviews: [orangeView, yellowView, tealView, purpleView, brownView])
     bottomStackView.distribution = .fillEqually

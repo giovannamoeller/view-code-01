@@ -17,12 +17,6 @@ class ViewController: UIViewController {
 
   func configureUI() {
     
-    
-    let textView = UILabel()
-    textView.text = "Built with View Code :D"
-    textView.textColor = .white
-    textView.font = .systemFont(ofSize: 24.0, weight: .bold)
-    
     let topStackView = TopStackView()
     
     let bottomStackView = BottomStackView()
@@ -30,11 +24,9 @@ class ViewController: UIViewController {
     let mainView = UIView()
     mainView.backgroundColor = .systemIndigo
     
+    let textView = MainTextView()
     mainView.addSubview(textView)
-    
-    textView.translatesAutoresizingMaskIntoConstraints = false
-    textView.centerXAnchor.constraint(equalTo: textView.superview!.centerXAnchor).isActive = true
-    textView.centerYAnchor.constraint(equalTo: textView.superview!.centerYAnchor).isActive = true
+    textView.configureConstraints()
     
     let stackView = UIStackView(arrangedSubviews: [topStackView, mainView, bottomStackView])
     view.addSubview(stackView)

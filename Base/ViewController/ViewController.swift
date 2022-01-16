@@ -17,8 +17,15 @@ class ViewController: UIViewController {
 
   func configureUI() {
     
-    let blueView = UIView()
-    blueView.backgroundColor = .blue
+    let greenView = UIView()
+    greenView.backgroundColor = .systemGreen
+    let pinkView = UIView()
+    pinkView.backgroundColor = .systemPink
+    let purpleView = UIView()
+    purpleView.backgroundColor = .systemIndigo
+    
+    let topStackView = UIStackView(arrangedSubviews: [greenView, pinkView, purpleView])
+    topStackView.distribution = .fillEqually
     
     let magentaView = UIView()
     magentaView.backgroundColor = .magenta
@@ -26,7 +33,7 @@ class ViewController: UIViewController {
     let orangeView = UIView()
     orangeView.backgroundColor = .orange
     
-    let stackView = UIStackView(arrangedSubviews: [blueView, magentaView, orangeView])
+    let stackView = UIStackView(arrangedSubviews: [topStackView, magentaView, orangeView])
     view.addSubview(stackView)
     stackView.axis = .vertical
     stackView.distribution = .fillEqually

@@ -19,7 +19,6 @@ class TopStackView: UIStackView {
   }
   
   func configureStackView() {
-    
     [UIColor.systemGreen, .systemPink, .systemCyan].forEach { color  in
       let view = UIView()
       view.backgroundColor = color

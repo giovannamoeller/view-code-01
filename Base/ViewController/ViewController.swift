@@ -35,19 +35,32 @@ class ViewController: UIViewController {
     let brownView = UIView()
     brownView.backgroundColor = .systemBrown
     
+    let textView = UILabel()
+    textView.text = "Built with View Code :D"
+    textView.textColor = .white
+    textView.font = .systemFont(ofSize: 24.0, weight: .bold)
+    
     let topStackView = UIStackView(arrangedSubviews: [greenView, pinkView, cyanView])
     topStackView.distribution = .fillEqually
     
     let bottomStackView = UIStackView(arrangedSubviews: [orangeView, yellowView, tealView, purpleView, brownView])
     bottomStackView.distribution = .fillEqually
     
+    topStackView.heightAnchor.constraint(equalToConstant: 96).isActive = true
+    bottomStackView.heightAnchor.constraint(equalToConstant: 126).isActive = true
+    
     let mainView = UIView()
     mainView.backgroundColor = .systemIndigo
+    
+    mainView.addSubview(textView)
+    
+    textView.translatesAutoresizingMaskIntoConstraints = false
+    textView.centerXAnchor.constraint(equalTo: textView.superview!.centerXAnchor).isActive = true
+    textView.centerYAnchor.constraint(equalTo: textView.superview!.centerYAnchor).isActive = true
     
     let stackView = UIStackView(arrangedSubviews: [topStackView, mainView, bottomStackView])
     view.addSubview(stackView)
     stackView.axis = .vertical
-    stackView.distribution = .fillEqually
     fillSubview(sv: stackView)
     
   }

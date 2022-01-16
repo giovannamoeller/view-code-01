@@ -18,7 +18,7 @@ Finally, just run it with `command + R`!
 
 ## Final Project
 
-![Final Project](https://i.ibb.co/CtrzjFx/view-code-01.png)
+<img src="https://i.ibb.co/CtrzjFx/view-code-01.png" alt="Final Project" width="300"/>
 
 Made with ❤️ by Giovanna Moeller.
 

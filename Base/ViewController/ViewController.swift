@@ -17,16 +17,6 @@ class ViewController: UIViewController {
 
   func configureUI() {
     
-    let orangeView = UIView()
-    orangeView.backgroundColor = .systemGreen
-    let yellowView = UIView()
-    yellowView.backgroundColor = .systemYellow
-    let tealView = UIView()
-    tealView.backgroundColor = .systemTeal
-    let purpleView = UIView()
-    purpleView.backgroundColor = .systemPurple
-    let brownView = UIView()
-    brownView.backgroundColor = .systemBrown
     
     let textView = UILabel()
     textView.text = "Built with View Code :D"
@@ -35,11 +25,7 @@ class ViewController: UIViewController {
     
     let topStackView = TopStackView()
     
-    let bottomStackView = UIStackView(arrangedSubviews: [orangeView, yellowView, tealView, purpleView, brownView])
-    bottomStackView.distribution = .fillEqually
-    
-    topStackView.heightAnchor.constraint(equalToConstant: 96).isActive = true
-    bottomStackView.heightAnchor.constraint(equalToConstant: 126).isActive = true
+    let bottomStackView = BottomStackView()
     
     let mainView = UIView()
     mainView.backgroundColor = .systemIndigo

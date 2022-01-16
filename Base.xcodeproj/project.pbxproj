@@ -17,6 +17,7 @@
 		4892515F2793C56B00111A1B /* BottomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4892515E2793C56B00111A1B /* BottomStackView.swift */; };
 		489251622793C67700111A1B /* MainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489251612793C67700111A1B /* MainTextView.swift */; };
 		489251642793C74600111A1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489251632793C74600111A1B /* MainView.swift */; };
+		489251662793C7A600111A1B /* MainStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489251652793C7A600111A1B /* MainStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4892515E2793C56B00111A1B /* BottomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomStackView.swift; sourceTree = "<group>"; };
 		489251612793C67700111A1B /* MainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextView.swift; sourceTree = "<group>"; };
 		489251632793C74600111A1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		489251652793C7A600111A1B /* MainStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				4892515E2793C56B00111A1B /* BottomStackView.swift */,
 				489251612793C67700111A1B /* MainTextView.swift */,
 				489251632793C74600111A1B /* MainView.swift */,
+				489251652793C7A600111A1B /* MainStackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				489251642793C74600111A1B /* MainView.swift in Sources */,
 				4892514C279393FC00111A1B /* ViewController.swift in Sources */,
 				48925148279393FC00111A1B /* AppDelegate.swift in Sources */,
+				489251662793C7A600111A1B /* MainStackView.swift in Sources */,
 				4892515D2793C2F700111A1B /* TopStackView.swift in Sources */,
 				489251622793C67700111A1B /* MainTextView.swift in Sources */,
 				4892514A279393FC00111A1B /* SceneDelegate.swift in Sources */,
